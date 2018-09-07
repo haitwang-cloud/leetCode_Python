@@ -1,2 +1,2 @@
 # leetCode_Python
-个人LeetCode刷题提交代码和思路
+Python3实现的leetCode刷题代码，内附各种解题思路
