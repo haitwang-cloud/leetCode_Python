@@ -14,7 +14,7 @@
 
 class Solution(object):
     #执行用时1436ms，时间有点儿长
-    def twoSum(self, nums, target):
+    def twoSum_1(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
@@ -28,7 +28,7 @@ class Solution(object):
                     return [i,index]
 
     # 执行用时52ms的案例
-    def twoSum2(self, nums, target):
+    def twoSum_2(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
@@ -41,7 +41,7 @@ class Solution(object):
             else:
                 dic[target-nums[i]] = i
     # 执行用时为36ms的案例
-    def twoSum3(self, nums, target):
+    def twoSum_3(self, nums, target):
         """
         :type nums: List[int]
         :type target: int

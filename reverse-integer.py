@@ -10,7 +10,7 @@
 
 class Solution:
     # 运行时间为76ms的案例
-    def reverse(self, x):
+    def reverse_1(self, x):
         """
         :type x: int
         :rtype: int
@@ -18,8 +18,9 @@ class Solution:
         a=str(x if x>0 else -x)
         nums=int(a[::-1]) if x>0 else -int(a[::-1])
         return nums if -2147483648<nums<2147483647 else 0
+
     # 运行时间为68ms的案例
-    def reverse2(self, x):
+    def reverse_2(self, x):
         """
         :type x: int
         :rtype: int
@@ -36,8 +37,9 @@ class Solution:
             return 0   
         else:
             return sum
+
         # 运行时间为52ms的案例        
-    def reverse3(self, x):
+    def reverse_3(self, x):
         """
         :type x: int
         :rtype: int
