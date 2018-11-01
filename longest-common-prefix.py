@@ -10,7 +10,7 @@
 
 class Solution:
     # 执行用时为 60 ms 的范例
-    def longestCommonPrefix(self, strs):
+    def longestCommonPrefix_1(self, strs):
         """
         :type strs: List[str]
         :rtype: str
@@ -35,7 +35,7 @@ class Solution:
 
         return max_str
     # 执行用时为 44 ms 的范例
-    def longestCommonPrefix(self, strs):
+    def longestCommonPrefix_2(self, strs):
         """
         :type strs: List[str]
         :rtype: str
