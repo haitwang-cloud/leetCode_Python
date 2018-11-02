@@ -33,16 +33,16 @@ class Solution:
                 pre = i
         return result
     # 执行时间为72ms的案例
+
     def eraseOverlapIntervals_2(self, intervals):
         if len(intervals) == 0:
             return False
         # 按区间的结尾进行排序
         intervals.sort(key=lambda intervals: intervals.end)
-        cnt,end=1,intervals[0].end
-        for i in range(1,len(intervals)):
-            if intervals[i].start<end:
+        cnt, end = 1, intervals[0].end
+        for i in range(1, len(intervals)):
+            if intervals[i].start < end:
                 continue
-            end=intervals[i].end
-            cnt+=1
+            end = intervals[i].end
+            cnt += 1
         return len(intervals)-cnt
-

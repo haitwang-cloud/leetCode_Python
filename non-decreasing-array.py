@@ -34,6 +34,7 @@ class Solution:
                 prev = nums[i]
         return True
      # 执行时间为56ms的案例
+
     def checkPossibility_2(self, nums):
         cal = 0
         for i in range(len(nums)-1):
