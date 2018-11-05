@@ -9,10 +9,10 @@ class Solution:
         :type k: int
         :rtype: int
         """
-        #nums.sort()
-        #return nums[len(nums)-k]
-        
+        # nums.sort()
+        # return nums[len(nums)-k]
+
         # import heapq
         # return heapq.nlargest(k,nums)[-1]
-        
+
         return sorted(nums)[-k]
