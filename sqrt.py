@@ -5,13 +5,13 @@ class Solution:
         :type x: int
         :rtype: int
         """
-        if x<2:
+        if x < 2:
             return x
-        l,h=1,x//2
-        while l<h:
-            mid=l+(h-1)//2
-            if mid>x/mid:
-                h=mid-1
+        l, h = 1, x//2
+        while l < h:
+            mid = l+(h-1)//2
+            if mid > x/mid:
+                h = mid-1
             else:
-                l=mid+1
+                l = mid+1
         return h
