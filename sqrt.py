@@ -8,7 +8,7 @@ class Solution:
         if x < 2:
             return x
         l, h = 1, x//2
-        while l < h:
+        while l <= h:
             mid = l+(h-1)//2
             if mid > x/mid:
                 h = mid-1

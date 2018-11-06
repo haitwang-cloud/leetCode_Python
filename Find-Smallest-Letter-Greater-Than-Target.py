@@ -7,7 +7,7 @@ class Solution:
         :rtype: str
         """
         left, right = 0, len(letters)-1
-        while left < right:
+        while left <= right:
             mid = left+(right-left)//2
             if letters[mid] > target:
                 right = mid-1
