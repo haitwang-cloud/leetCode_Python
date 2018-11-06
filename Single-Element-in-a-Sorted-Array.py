@@ -20,7 +20,7 @@ class Solution:
                 #  保证 left/right/mid 都在偶数位，使得查找区间大小一直都是奇数
                 mid = mid-1
             if nums[mid] == nums[mid+1]:
-                left=mid+2
+                left = mid+2
             else:
                 right = mid
         return nums[left]
