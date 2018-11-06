@@ -23,7 +23,8 @@ class Solution:
                 left = mid+1
 
         return left
-    # 执行时间为32ms的案例    
+    # 执行时间为32ms的案例
+
     def firstBadVersion_2(self, n):
         """
         :type n: int
@@ -31,7 +32,7 @@ class Solution:
         """
         i = 1
         j = n
-        while i<j:
+        while i < j:
             mid = int((i+j)/2)
             if isBadVersion(mid):
                 j = mid-1
