@@ -27,7 +27,7 @@ class Solution(object):
 
         return 0
     # 执行时间为108ms的案例
-    def ladderLength(self, beginWord, endWord, wordList):
+    def ladderLength_2(self, beginWord, endWord, wordList):
 
         wordSet = set(wordList)
         headQ = set([beginWord])
