@@ -3,13 +3,15 @@
 
 class Solution(object):
     # 执行时间为56ms的案例
-    def hasCycle(self, head):
+    def hasCycle(self, head: ListNode) -> bool:
         """
         :type head: ListNode
         :rtype: bool
         """
-        fast=slow=head
-        while fast and fast.next:
+        if not head:
+            return False
+        fast,slow=head,head
+        while fast and slow and fast.next:
             fast,slow=fast.next.next,slow.next
             if fast==slow:
                 return True
