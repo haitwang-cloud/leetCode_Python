@@ -13,13 +13,18 @@ class Solution(object):
         :type d: List[str]
         :rtype: str
         """
-        d.sort(key=lambda x:(-len(x),x))
-        for item in d:
-            index=0
-            for c in s:
-                if index<len(item) and item[index]==c:
-                    index+=1
-                if index==len(item):
-                    return item
-        return ""
+        def is_sub(a, b):
+            i, n = 0, len(a)
+            for c in b:
+                if i < n and a[i] == c:
+                    i += 1
+            return i == n
+        result = ''
+        for string in d:
+            if is_sub(string, s):
+                if len(string) > len(result):
+                    result = string
+                elif len(string) == len(result) and string < result:
+                    result = string
+        return result
 
