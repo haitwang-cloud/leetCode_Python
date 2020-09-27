@@ -10,16 +10,17 @@ import math
 
 class Solution:
     # 执行时间为260ms的案例
-    def judgeSquareSum_1(self, c):
-        i, j = 0, int(math.sqrt(c))+1
-        while i < j:
-            powSum = i*i+j*j
-            if (powSum == c):
-                return True
-            elif powSum < c:
-                i += 1
+    def judgeSquareSum(self, c: int) -> bool:
+        lt = 0
+        rt = int(math.sqrt(c))
+        while lt <= rt:
+            s = lt*lt +rt*rt 
+            if s > c:
+                rt -= 1
+            elif s < c:
+                lt += 1
             else:
-                j -= 1
+                return True
         return False
 
         
